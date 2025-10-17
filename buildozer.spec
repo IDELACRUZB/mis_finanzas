@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Calculadora
+title = Mis Finanzas
 
 # (str) Package name
-package.name = calculadora
+package.name = Mis Finanzas
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -13,7 +13,7 @@ package.domain = org.test
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,db
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -37,17 +37,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy==2.1.0,kivymd==0.104.2,pillow
+requirements = python3==3.11.3,hostpython3==3.11.3,kivy==2.3.1,kivymd==1.2.0,pillow,pandas=2.3.1,sqlite3=2.6.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/calcu.png
+presplash.filename = %(source.dir)s/logo_mis_finanzas.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/calcu.png
+icon.filename = %(source.dir)s/logo_mis_finanzas.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -64,10 +64,10 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3.11.3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.3.1
 
 #
 # Android specific
